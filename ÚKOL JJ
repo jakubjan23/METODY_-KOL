@@ -1,0 +1,39 @@
+//1
+function odmocnina(x) {
+  return Math.sqrt(x);
+}
+const cislo = 16;
+const vysledek = odmocnina(cislo);
+
+console.log(`Odmocnina z ${cislo} je ${vysledek}`);
+
+//3
+let cislo = 1;
+function LichSud (cislo){
+   let vysledek = cislo %2;
+   if(vysledek == 0)
+   {
+       return "Číslo je sudé"
+   }
+   else
+   {
+       return "Číslo je liché"    
+   }
+}
+console.log(LichSud(cislo));
+//4
+function jeVPoli(prvek, pole) {
+  for (let i = 0; i < pole.length; i++) {
+    if (pole[i] === prvek) {
+      return false;
+    }
+        return true
+  }
+}
+const pole = [1, 2, 3, 4, 5];
+const prvek = 3;
+if (jeVPoli(prvek, pole)) {
+  console.log(`${prvek} je obsažen v poli.`);
+} else {
+  console.log(`${prvek} není obsažen v poli.`);
+}
